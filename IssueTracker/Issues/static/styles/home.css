@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.sidebar, .main-content, .top-row, .bottom-row {
+  display: flex;
+}
+
+.sidebar{
+  border: 1px solid green;
+  /* height: 100%; */
+  width: 200px;
+}
+
+.main-content{
+  /* border: 1px solid red; */
+  flex: auto;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.top-row{
+  flex: 3;
+  border: 1px solid blue;
+}
+
+.issue{
+  flex: 3;
+  border: 1px solid red
+}
+
+.calendar{
+  flex: 5;
+  border: 1px solid purple;
+}
+
+.bottom-row{
+  flex: 2;
+}
+
+.bottom-row{
+  border: solid 1px orange;
+}
