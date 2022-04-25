@@ -1,0 +1,41 @@
+<div class="sidebar">
+  <form action="create_project" method="post">
+    {% csrf_token %}
+    <input type="text" name="title">
+    <input type="text" name="description">
+    <button type="submit" >Add Project</button>
+  </form>
+  <div class="sidebar-title">
+    <h3>Projects</h3>
+    <button id="new_project">New Project</button>
+  </div>
+  <div class="sidebar-projects">
+    <ul>
+      {% for project in projects %}
+      <li>
+        <div class="project-title">
+          <h4 style="color: red">{{project.title}}</h4>
+          <button>New Sprint</button>
+        </div>
+        <div class="project-sprints">
+          <ul>
+            <li>
+              <h5 class="sprint-title" style="color: blue">Sprint 1</h5>
+              <div class="sprint-tasks">
+                <ul>
+                  <li>
+                    <h6 class="task-title" style="color: green">
+                      Task 1
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><h5 class="sprint-title">Sprint 2</h5></li>
+          </ul>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

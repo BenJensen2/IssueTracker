@@ -45,15 +45,15 @@ class Sprint(models.Model):
 class Project(models.Model):
     # Identifying Information
     title = models.CharField(max_length=255)
-    description = models.TextField()
+    description = models.TextField(blank=True, default='')
 
     # Projections
-    projected_start = models.DateTimeField()
-    projected_end = models.DateTimeField()
+    projected_start = models.DateTimeField(null=True)
+    projected_end = models.DateTimeField(null=True)
     
     # Actuals
-    actual_start = models.DateTimeField()
-    actual_end = models.DateTimeField()
+    actual_start = models.DateTimeField(null=True)
+    actual_end = models.DateTimeField(null=True)
 
     # Relational Information
     # Sprints
