@@ -7,19 +7,22 @@
     <title>Home</title>
     {% load static %}
     <link rel="stylesheet" href="../static/css/home.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script src="../static/js/projectForm.js"></script>
-    
   </head>
   <body>
     <main>
-      {% include "sidebar.html" %}
+      <div class="sidebar">{% include "sidebar.html" %}</div>
       <div class="main-content">
         <div class="top-row">
-          <div class="issue">Issue</div>
-          <div class="calendar">Calendar</div>
+          <div class="issue">{% include "issue.html" %}</div>
+          <div class="calendar">{% include "calendar.html" %}</div>
         </div>
-        <div class="bottom-row">Hierarchy</div>
+        <div class="bottom-row">{% include "hierarchy.html" %}</div>
       </div>
     </main>
   </body>

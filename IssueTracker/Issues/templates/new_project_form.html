@@ -1,0 +1,6 @@
+<form action="create_project" method="post">
+  {% csrf_token %}
+  <input type="text" name="title" />
+  <input type="text" name="description" />
+  <button type="submit">Add Project</button>
+</form>
