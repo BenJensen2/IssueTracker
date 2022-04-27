@@ -12,6 +12,7 @@ main{
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  z-index: 1;
 }
 
 .main-content, .top-row, .bottom-row {
@@ -113,4 +114,15 @@ button {
 .sprint-tasks{
   padding: 5px;
   padding-right: 0px;
+}
+
+.new-project-form{
+  border: solid 1px gray;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  z-index: 2;
+  display: inline-block;
 }
