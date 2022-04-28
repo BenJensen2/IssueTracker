@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   // New Project Form Hide
   // - Cancel Button
-  $(".cancel-button").click(function() {
+  $(".cancel-button, .add-project").click(function() {
     $(".pop-ups").css("display", "none");
   });
 });
