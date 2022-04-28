@@ -17,8 +17,15 @@
   display: block;
 }
 
-/* Set the submission button to the right */
-.form-field:last-of-type {
-  float: right;
-  margin-bottom: 0px;
+/* Aligns the action buttons */
+.action-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 4px 0px 3px;
+}
+
+.cancel-button{
+  background-color: white;
+  border: none;
+  color: red;
 }
