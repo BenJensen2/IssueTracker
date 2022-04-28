@@ -7,6 +7,8 @@
     <title>Home</title>
     {% load static %}
     <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" href="../static/css/sidebar.css">
+    <link rel="stylesheet" href="../static//css/new_project_form.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -15,18 +17,18 @@
     <script src="../static/js/projectForm.js"></script>
   </head>
   <body>
+    <div class="pop-ups">
+      <div class="new-project-form">{% include "new_project_form.html" %}</div>
+    </div>
     <main>
-      <div class="new-project-form">
-        {% include "new_project_form.html" %}
-      </div>
       <div class="sidebar">{% include "sidebar.html" %}</div>
-      <div class="main-content">
+      <!-- <div class="main-content">
         <div class="top-row">
           <div class="issue">{% include "issue.html" %}</div>
           <div class="calendar">{% include "calendar.html" %}</div>
         </div>
         <div class="bottom-row">{% include "hierarchy.html" %}</div>
-      </div>
+      </div> -->
     </main>
   </body>
 </html>
