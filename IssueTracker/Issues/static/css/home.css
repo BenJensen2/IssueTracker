@@ -1,69 +1,22 @@
+/* Zeroes out all standards for web browsers */
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
-/* Wrapper for all pop-up forms */
-.pop-ups{
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  display: flex;
-  z-index: 2;
-}
+/* ############################################################# */
+/* Standard Elements */
+/* ############################################################# */
 
-li{
-  list-style: none;
-}
-
-main{
-  display: flex;
-  justify-content: space-between;
-  height: 100vh;
-  z-index: 1;
-}
-
-.main-content, .top-row, .bottom-row {
-  display: flex;
-}
-
-
-
-.main-content{
-  /* border: 1px solid red; */
-  flex: auto;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.top-row{
-  flex: 3;
-  border: 1px solid blue;
-}
-
-.issue{
-  flex: 3;
-  border: 1px solid red
-}
-
-.calendar{
-  flex: 5;
-  border: 1px solid purple;
-}
-
-.bottom-row{
-  flex: 2;
-}
-
-.bottom-row{
-  border: solid 1px orange;
-}
-
+/* Keed headings thin and neat*/
 h3, h4, h5, h6{
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
 }
 
+/* Standard button style */
 button {
   border-width: 0px;
   border-radius: 10px;
@@ -74,4 +27,75 @@ button {
   font-size: 10px;
   padding: 3px 4px 3px 4px;
 }
+
+/* Get rid of list bulleting */
+li{
+  list-style: none;
+}
+
+/* ############################################################# */
+/* Wrapper for all pop-ups */
+/* ############################################################# */
+
+/* Keep Hidden until pop-up clicked */
+.pop-ups{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+}
+
+/* ############################################################# */
+/* Main content and alignment */
+/* ############################################################# */
+
+/* Flex the main element and spread to the full height of the view window */
+main{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  z-index: 1;
+}
+
+/* Flex the components within main element*/
+.main-content, .top-row, .bottom-row {
+  display: flex;
+}
+
+/* Main content in the main element */
+.main-content{
+  /* border: 1px solid red; */
+  flex: auto;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Top row of main content */
+.top-row{
+  flex: 3;
+  border: 1px solid blue;
+}
+
+/* Issue within the top row of the main content */
+.issue{
+  flex: 3;
+  border: 1px solid red
+}
+
+/* Calendar within the top row of the main content */
+/* Calendar should have a little more width than the issues */
+.calendar{
+  flex: 5;
+  border: 1px solid purple;
+}
+
+/* Bottom row of the main content */
+.bottom-row{
+  flex: 2;
+  border: solid 1px orange;
+}
+
+
+
 
