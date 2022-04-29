@@ -1,10 +1,5 @@
 .new-project-form {
-  margin: auto;
-  margin-top: 20%; /* Keeps the form a little above center vertically */
-                      /* - Easier on the eyes */
-  border: solid 1px gray;
-  padding: 10px;
-  display: inline-block;
+
 }
 
 /* Space between fields */

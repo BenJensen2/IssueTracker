@@ -12,6 +12,9 @@ def home(request):
   print("Hello")
   return render(request, 'home.html',context)
 
+def view_project(request):
+  return render(request, "project_detail.html")
+
 def create_project(request):
   project_title = request.POST['title']
   project_description = request.POST['description']

@@ -4,26 +4,47 @@ $(document).ready(function() {
   // ####################################################################
   // Click Events
   // ####################################################################
+  
+  // Open Pop-up Form Wrappers
+  function openPopUp(){
+    console.log("Pop-ups opened")
+    $(".pop-ups").css("display", "flex");
+    $(".pop-up-form").css("display", "flex");
+  }
+
+  // Close Pop-up Form Wrappers
+  function closePopUp(){
+    $(".pop-ups").css("display", "none");
+    $(".pop-up-form").css("display", "none");
+  }
+  
   // New Project Form Popup
   $("#new_project").click(function() {
-    $(".pop-ups").css("display", "flex");
+    openPopUp()
+    $(".new_project_form").css("display", "inline-block");
   });
+
+    // Project Detail Form Popup
+    $(".project-title").click(function(){
+      openPopUp()
+      $(".project_detail_form").css("display", "inline-block");
+    })
 
   // New Project Form Hide
   // - Cancel Button
   $(".cancel-button, .add-project").click(function() {
-    $(".pop-ups").css("display", "none");
+    closePopUp()
+    $(".new_project_form").css("display", "none");
   });
-
   // - Click outside of form
   document.addEventListener("click", function(e) {
     e.preventDefault()
     let popUpWrapper = document.getElementsByClassName("pop-ups")[0];
     if (popUpWrapper == e.target) {
-      $(".pop-ups").css("display", "none");
+      closePopUp()
+      $(".new_project_form").css("display", "none");
     }
   });
-
 
   // Delete Project
   $(".project-title .delete-button").click(function() {

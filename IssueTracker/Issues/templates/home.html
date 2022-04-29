@@ -8,7 +8,9 @@
     {% load static %}
     <link rel="stylesheet" href="../static/css/home.css" />
     <link rel="stylesheet" href="../static/css/sidebar.css">
+    <link rel="stylesheet" href="../static/css/pop_ups.css">
     <link rel="stylesheet" href="../static//css/new_project_form.css" />
+    <link rel="stylesheet" href="../static/css/project_detail_form.css">
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -17,9 +19,7 @@
     <script src="../static/js/home.js"></script>
   </head>
   <body>
-    <div class="pop-ups">
-      <div class="new-project-form">{% include "new_project_form.html" %}</div>
-    </div>
+    <div class="pop-ups">{% include "pop_ups.html" %}</div>
     <main>
       <div class="sidebar">{% include "sidebar.html" %}</div>
       <!-- <div class="main-content">
