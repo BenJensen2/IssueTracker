@@ -1,4 +1,25 @@
 <div class="pop-up-form">
-  <div class="new-project-form">{% include "new_project_form.html" %}</div>
-  <div class="project-detail-form"> {% include "project_detail_form.html" %}</div>
+  <!-- Create Project -->
+  <form action="view_project" method="post">
+    {% csrf_token %}
+    {% include "project_detail_form.html" %}
+    <!-- <div class="action-field">
+      <button class="danger-button" type="button" >Cancel</button>
+      <button class="add-project" type="submit">Add Project</button>
+    </div> -->
+  </form>
+
+  <!-- View Project -->
+  <!-- <form action="view_project" method="post">
+    {% csrf_token %}
+    {% include "project_detail_form.html" %}
+    <div class="action-field">
+      <button class="cancel-button" type="button" >Delete</button>
+      <button class="add-project" type="submit">Add Project</button>
+    </div>
+  </form> -->
+
+  
+  <!-- <div class="new-project-form">{% include "new_project_form.html" %}</div> -->
+  <!-- <div class="project-detail-form"> {% include "project_detail_form.html" %}</div> -->
 </div>

@@ -1,6 +1,6 @@
 <div class="sidebar-title">
   <h3>Projects</h3>
-  <button id="new_project">New Project</button>
+  <button id="new_project" class="submission-button">New Project</button>
 </div>
 <div class="sidebar-projects">
   <ul>
@@ -8,17 +8,7 @@
     <li>
       <div class="project-title">
         <h4 style="color: red">{{project.title}}</h4>
-        <form action="delete_project">
-          {% csrf_token %}
-          <button
-          type="submit"
-          name="project_id"
-          value="{{project.id}}"
-          class="delete-button"
-          > delete
-          </button>
-        </form>
-        <button class="new-sprint-button" type="button" >New Sprint</button>
+        <button class="submission-button" type="button" >New Sprint</button>
       </div>
       <div class="project-sprints">
         <ul>

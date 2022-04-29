@@ -1,3 +1,53 @@
 .project-detail-form{
   display: none;
+  width: 200px;
+  font-size: 15px;
+  margin-bottom: -10px;
+}
+
+.project-detail-form input{
+  width: 100%;
+  border: solid 1px #c3b0b0;
+}
+
+.project-detail-form .form-field input:first-child {
+  height: 36px;
+  border: none;
+  font-size: 30px;
+  color: #b9b9b9;
+}
+
+/* Space between fields */
+.form-field {
+  margin-bottom: 10px;
+}
+
+/* Keep the label above the input field */
+.form-field label {
+  display: block;
+}
+
+/* Aligns the action buttons */
+.action-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 4px 0px 3px;
+}
+
+.project-events{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-events{
+  font-size: 12px;
+  text-align: center;
+}
+
+.project-events button{
+  margin-top: 10px;
+}
+
+.project-events .danger-button{
+  padding-top: 3px;
 }

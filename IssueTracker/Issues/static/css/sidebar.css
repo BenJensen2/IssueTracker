@@ -32,15 +32,10 @@
 }
 
 /* New Project Button */
-.new-sprint-button{
+.project-title .submission-button{
   font-size: 9px;
   padding: 0px 5px 0px 5px;
 }
-
-.project-title .delete-button {
-  padding-top: 6px;
-}
-
 
 /* ############################################################# */
 /* Sprints within the project */

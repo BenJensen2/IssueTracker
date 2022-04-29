@@ -1,15 +1,43 @@
-<form action="view_project" method="post">
-  {% csrf_token %}
+<div class="project-detail-form">
   <div class="form-field">
-    <label for="title">Name</label>
-    <input type="text" name="title" />
+    <input type="text" name="title" placeholder="Project 1"/>
   </div>
   <div class="form-field">
     <label for="description">Description</label>
     <input type="text" name="description" />
   </div>
-  <div class="action-field">
-    <button class="cancel-button" type="button" >Cancel</button>
-    <button class="add-project" type="submit">Add Project</button>
+  <div class="form-field">
+    <label for="projected_start_date">Projected Start Date</label>
+    <input type="text" name="projected_start_date" />
   </div>
-</form>
+  <div class="form-field">
+    <label for="projected_end_date">Projected End Date</label>
+    <input type="text" name="projected_end_date" />
+  </div>
+  <div class="form-field">
+    <label for="actual_start_date">Actual Start Date</label>
+    <input type="text" name="projected_start_date" />
+  </div>
+  <div class="form-field">
+    <label for="actual_end_date">Actual End Date</label>
+    <input type="text" name="projected_end_date" />
+  </div>
+  <div class="form-field">
+    <div class="project-events">
+      <div class="project-events-left">
+        <div class="project-event-info">
+          <label for="created_at">Created</label>
+          <p>Yesterday at 3:41 PM</p>
+        </div>
+        <button class="danger-button">Cancel</button>
+      </div>
+      <div class="project-events-right">
+        <div class="project-event-info">
+          <label for="updated_at">Updated</label>
+          <p>Today at 6PM</p>
+        </div>
+        <button class="submission-button">Add Project</button>
+      </div>
+    </div>
+  </div>
+</div>

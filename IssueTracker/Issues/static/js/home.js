@@ -27,7 +27,7 @@ $(document).ready(function() {
     // Project Detail Form Popup
     $(".project-title").click(function(){
       openPopUp()
-      $(".project_detail_form").css("display", "inline-block");
+      $(".project-detail-form").css("display", "inline-block");
     })
 
   // New Project Form Hide
