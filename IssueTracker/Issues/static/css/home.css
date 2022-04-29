@@ -33,6 +33,18 @@ li{
   list-style: none;
 }
 
+/* Removes url underline */
+a {
+  text-decoration: none;
+}
+
+.delete-button{
+  font-size: 10px;
+  color: red;
+  font-family:'Courier New', Courier, monospace;
+  background-color: white;
+}
+
 /* ############################################################# */
 /* Wrapper for all pop-ups */
 /* ############################################################# */

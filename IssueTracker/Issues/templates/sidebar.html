@@ -8,7 +8,17 @@
     <li>
       <div class="project-title">
         <h4 style="color: red">{{project.title}}</h4>
-        <button>New Sprint</button>
+        <form action="delete_project">
+          {% csrf_token %}
+          <button
+          type="submit"
+          name="project_id"
+          value="{{project.id}}"
+          class="delete-button"
+          > delete
+          </button>
+        </form>
+        <button class="new-sprint-button" type="button" >New Sprint</button>
       </div>
       <div class="project-sprints">
         <ul>

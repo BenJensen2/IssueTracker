@@ -10,7 +10,6 @@ $(document).ready(function() {
   });
 
   // New Project Form Hide
-
   // - Cancel Button
   $(".cancel-button, .add-project").click(function() {
     $(".pop-ups").css("display", "none");
@@ -18,6 +17,7 @@ $(document).ready(function() {
 
   // - Click outside of form
   document.addEventListener("click", function(e) {
+    e.preventDefault()
     let popUpWrapper = document.getElementsByClassName("pop-ups")[0];
     if (popUpWrapper == e.target) {
       $(".pop-ups").css("display", "none");
@@ -25,7 +25,9 @@ $(document).ready(function() {
   });
 
 
+  // Delete Project
+  $(".project-title .delete-button").click(function() {
+    console.log("Delete Project")
+  })
 
-
-  
 });

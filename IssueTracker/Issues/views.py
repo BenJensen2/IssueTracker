@@ -17,3 +17,14 @@ def create_project(request):
   project_description = request.POST['description']
   Project.objects.create(title = project_title, description = project_description)
   return redirect('../home')
+
+def delete_project(request):
+  
+  return redirect('../home')
+
+  # def delete_ninja(request):
+  #   ninja_id = request.POST['ninja_id']
+  #   print(ninja_id)
+  #   print('Delete Ninja')
+  #   ninjas.objects.get(id=ninja_id).delete()
+  #   return redirect('/ninjas')
